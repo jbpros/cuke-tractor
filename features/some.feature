@@ -20,6 +20,11 @@ Feature: Errors and callbacks
     When Protractor throws up
     Then something should not happen
 
+  Scenario: protractor doesn't find element on angular app
+    Given Protractor opened an Angular app
+    When Protractor does not find an element by CSS
+    Then something should not happen
+
   Scenario: passing scenario
     Given something happened
     When something happens

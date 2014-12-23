@@ -3,6 +3,10 @@ module.exports = function () {
     callback();
   });
 
+  this.Given(/^Protractor opened an Angular app$/, function (callback) {
+    browser.get('http://angular.github.io/protractor/#/').then(callback);
+  });
+
   this.When(/^something happens$/, function (callback) {
     callback();
   });
@@ -32,6 +36,10 @@ module.exports = function () {
         console.log('OK', res);
         callback();
       });
+  });
+
+  this.When(/^Protractor does not find an element by CSS$/, function (callback) {
+    $('css_bad_path').click().then(callback);
   });
 
   this.When(/^I double\-callback$/, function (callback) {
