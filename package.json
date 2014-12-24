@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cucumber": "git://github.com/cucumber/cucumber-js.git#d1c7da622796aeddb7e771e5eb9fbe69943e046f",
+    "cucumber": "^0.4.7",
     "node-inspector": "^0.8.1",
     "protractor": "^1.5.0"
   }
